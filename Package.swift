@@ -12,8 +12,12 @@ let package = Package(
             targets: ["MyLibrary"]),
         
         .library(
-            name: "Email",
+            name: "EmailValidate",
             targets: ["EmailValidate"]),
+        .library(
+            name: "Networking",
+            targets: ["Networking"]),
+       
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -28,6 +32,9 @@ let package = Package(
         .target(
             name: "EmailValidate",
             dependencies: []),
-      
+        .target(
+            name: "Networking",
+            dependencies: []),
+     
     ]
 )
