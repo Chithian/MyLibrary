@@ -10,6 +10,10 @@ let package = Package(
         .library(
             name: "MyLibrary",
             targets: ["MyLibrary"]),
+        
+        .library(
+            name: "Email",
+            targets: ["EmailValidate"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,6 +24,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MyLibrary",
+            dependencies: []),
+        .target(
+            name: "EmailValidate",
             dependencies: []),
       
     ]

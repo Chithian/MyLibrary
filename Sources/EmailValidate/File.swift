@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+public struct EmailValidate {
+    public private(set) var label = "Gmail!"
+
+    public init() {
+    }
+}
